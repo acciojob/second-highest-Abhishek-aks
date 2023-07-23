@@ -11,11 +11,10 @@
 		function secondHighest(arr) {
 			//Write your code here
 			if (arr.length <= 1) {    return -Infinity;
-    }
+		    }
 
-    let max = -Infinity;
-    let secondMax = -Infinity;
-
+    let max = -Infinity;    let secondMax = -Infinity;
+			
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             secondMax = max;
@@ -24,7 +23,6 @@
             secondMax = arr[i];
         }
     }
-
     if (secondMax === -Infinity || max === secondMax) {
         return -Infinity;
     }
